@@ -1,0 +1,36 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+xmlns:f="sap.ui.layout.form"
+		controllerName="zcustomer.Customer" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+	      
+		<f:SimpleForm id="SimpleFormDisplay354"
+	        binding="{/Customers('ALFKI')}"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			title="Address"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label text="Customer ID" />
+				<Text text="{CustomerID}"/>
+				<Label text="Company Name" />
+				<Text text="{CompanyName}"/>
+				
+			</f:content>
+		</f:SimpleForm>
+	
+		</content>
+	</Page>
+</core:View>
